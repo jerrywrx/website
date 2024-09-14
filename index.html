@@ -25,7 +25,7 @@
                 <p>I'm a first-year robotics master student at <a href="https://www.seas.upenn.edu/"></a>University of Pennsylvania</a>. Prior to UPenn, I received my B.S. in Computer Engineering from <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>. At UIUC, I was an undergraduate research assistant at <a href="https://yunzhuli.github.io">Robotic Perception, Interaction, and Learning Lab</a> with <a href="https://yunzhuli.github.io"></a>Prof. Yunzhu Li</a> and <a href="https://thehcalab.web.illinois.edu">Human Centered Autonomy Lab</a> advised by <a href="https://ece.illinois.edu/about/directory/faculty/krdc">Prof. Katie Driggs-Campbell</a>.
                 </p>
                 <p>
-                  My current research interest is in robot learning and perception. My ultimate research goal is to bridge the gap of robots between simulation and the real world. At UIUC, I was fortunate to lead the embedded system team of <a href="https://github.com/illini-robomaster">Illini RoboMaster</a> across multiple competitions.
+                  My current research interest is in robot learning and perception. My research goal is to bridge the gap of robots between simulation and the real world. At UIUC, I was fortunate to lead the embedded system team of <a href="https://github.com/illini-robomaster">Illini RoboMaster</a> across multiple competitions.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:runxuan@seas.upenn.edu">Email</a> &nbsp;/&nbsp;
@@ -37,7 +37,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/portrait.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/portrait.png" class="hoverZoomLink"></a>
+                <a href="images/portrait.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/portrait.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -53,30 +53,28 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+    <tr onmouseout="spa_stop()" onmouseover="spa_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-          <source src="images/nerfcasting.mp4" type="video/mp4">
+          <div class="two" id='spa_image'><video  width=100% muted autoplay loop>
+          <source src="images/spa.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/nerfcasting.jpg' width=100%>
+          <img src='images/spa.png' width=100%>
         </div>
         <script type="text/javascript">
-          function nerfcasting_start() {
-            document.getElementById('nerfcasting_image').style.opacity = "1";
+          function spa_start() {
+            document.getElementById('spa_image').style.opacity = "1";
           }
 
-          function nerfcasting_stop() {
-            document.getElementById('nerfcasting_image').style.opacity = "0";
+          function spa_stop() {
+            document.getElementById('spa_image').style.opacity = "0";
           }
-          nerfcasting_stop()
+          spa_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://nerf-casting.github.io/">
-          <span class="papertitle">Sim-to-Real Adaptation with Graph Networks for Granular Objects Scooping Tasks</span>
-        </a>
+        <span class="papertitle">Sim-to-Real Adaptation with Graph Networks for Granular Objects Scooping Tasks</span>
         <br>
 
         <a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
@@ -96,53 +94,58 @@
         <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
         <p></p>
         <p>
-        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        A GNN-based dynamics model combined with MCTS lets robots efficiently scoop granular objects from containers, bridging the sim-to-real gap by adapting simulation-trained models with minimal real-world data.
         </p>
       </td>
     </tr>
 
 
-    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+    <tr onmouseout="dragon_stop()" onmouseover="dragon_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+          <div class="two" id='dragon_image'><video  width=100% muted autoplay loop>
           <source src="images/flash_cache.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/flash_cache.jpg' width=100%>
+          <img src='images/dragon.png' width=100%>
         </div>
         <script type="text/javascript">
-          function flash_cache_start() {
-            document.getElementById('flash_cache_image').style.opacity = "1";
+          function dragon_start() {
+            document.getElementById('dragon_image').style.opacity = "1";
           }
 
-          function flash_cache_stop() {
-            document.getElementById('flash_cache_image').style.opacity = "0";
+          function dragon_stop() {
+            document.getElementById('dragon_image').style.opacity = "0";
           }
-          flash_cache_stop()
+          dragon_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://benattal.github.io/flash-cache/">
-          <span class="papertitle">Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</span>
-        </a>
+        <span class="papertitle">DRAGON: A Dialogue-Based Robot for Assistive Navigation with Visual Language Grounding</span>
         <br>
-				<a href="https://benattal.github.io/">Benjamin Attal</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>, <br>
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+				<a href="https://shuijing725.github.io">Shuijing Liu</a>,
+				<a href="https://aamzhas.github.io">Aamir Hasan</a>,
+				<a href="https://www.linkedin.com/in/kaiwen-hong-524520141/?locale=en_US">Kaiwen Hong</a>,
+				<strong>Runxuan Wang</strong>,
+				<a href="https://sites.google.com/site/changpeixin/home">Peixin Chang</a>,
+				Zachery Mizrachi,
+				Justin Lin,
+				<a href="https://scholar.google.com/citations?user=83a8tp0AAAAJ&hl=en">D. Livingston McPherson</a>,
+				<a href="https://lifehome.ahs.illinois.edu/rogers/">Wendy A. Rogers</a>,
+				<a href="https://ece.illinois.edu/about/directory/faculty/krdc">Katherine Driggs-Campbell</a>
         <br>
-        <em>ECCV</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2024
         <br>
-        <a href="https://benattal.github.io/flash-cache/">project page</a>
+        <a href="https://sites.google.com/view/dragon-wayfinding">project page</a>
         /
-        <a href="TODO">arXiv</a>
+        <a href="https://www.youtube.com/playlist?list=PLL4IPhbfiY3YkITpyLjeroak_wBn151pn">video</a>
+        /
+        <a href="https://github.com/Shuijing725/Dragon_Wayfinding">code</a>
+        /
+        <a href="https://arxiv.org/abs/2307.06924">paper</a>
         <p></p>
         <p>
-          A more physically-accurate inverse rendering system based on radiance caching for recovering geometry, materials, and lighting from RGB images of an object or scene.
+          A dialogue-based robot integrates CLIP-powered visual-language grounding with autonomous navigation to assist visually impaired users, guiding them to desired landmarks and providing real-time environmental descriptions through natural, unconstrained speech interactions.
         </p>
       </td>
     </tr>
@@ -156,7 +159,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  Source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>'s website.
                 </p>
               </td>
             </tr>
